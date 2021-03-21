@@ -1,0 +1,28 @@
+
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    .box{
+        width: 250px;
+        margin:15px;
+        .imgBx{
+            @include image-bx(300px);
+            img{
+                @include img();
+            }
+        }
+        .text{
+            padding: 15px 0 5px;
+            text-align: center;
+            h3{
+                font-weight: 500;
+                color:$color-black;
+            }
+        }
+    }
+
+}
+

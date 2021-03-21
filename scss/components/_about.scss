@@ -1,0 +1,46 @@
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .col50{
+        position: relative;
+        .imgBx{
+            @include image-bx(300px);
+           img{
+            @include img;
+           }
+        }
+    }
+}
+
+
+
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* Responsive */
+@media (max-width: 990px){
+    
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+}
